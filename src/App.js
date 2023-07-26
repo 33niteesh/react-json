@@ -11,13 +11,27 @@ function App() {
     axios.get("http://localhost:3001/books").then(e=>setBooksdata(e.data))
     axios.get("http://localhost:3001/shoes").then(e=>setShoedata(e.data))
   }
-  // }
   useEffect(()=>{
     fetchData();
   },[])
+  const onlymobile=()=>{
+    axios.get("http://localhost:3001/mobiles").then(e=>setMobiledata(e.data))
+    axios.get("http://localhost:3001/books").then(e=>setBooksdata([]))
+    axios.get("http://localhost:3001/shoes").then(e=>setShoedata([]))
+  }
+  const onlyshoe=()=>{
+    axios.get("http://localhost:3001/mobiles").then(e=>setMobiledata([]))
+    axios.get("http://localhost:3001/books").then(e=>setBooksdata(e.data))
+    axios.get("http://localhost:3001/shoes").then(e=>setShoedata([]))
+  }
+  const onlybooks=()=>{
+    axios.get("http://localhost:3001/mobiles").then(e=>setMobiledata([]))
+    axios.get("http://localhost:3001/books").then(e=>setBooksdata([]))
+    axios.get("http://localhost:3001/shoes").then(e=>setShoedata(e.data))
+  }
   return (
     <div className="App">
-      <nav className='nav'><div className='div'>Mobile</div><div className='div'>Books</div><div className='div'>Shoes</div></nav>
+      <nav className='nav'><div className='div' onClick={onlymobile}>Mobile</div><div className='div' onClick={onlybooks}>Books</div><div className='div' onClick={onlyshoe}>Shoes</div></nav>
       <div>
         {
           mobiledata?.map((data,index)=>{
