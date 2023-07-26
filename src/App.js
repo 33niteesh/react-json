@@ -17,7 +17,6 @@ function App() {
   },[])
   return (
     <div className="App">
-      welcome
       <nav className='nav'><div className='div'>Mobile</div><div className='div'>Books</div><div className='div'>Shoes</div></nav>
       <div>
         {
