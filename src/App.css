@@ -1,0 +1,17 @@
+.App {
+  text-align: center;
+}
+.nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  padding: 2%;
+  gap:1%;
+}
+.div{
+  color: rgba(255, 55, 0, 0.566);
+}
+.div:hover{
+  color: rgb(255, 0, 0);
+  cursor: pointer;
+}

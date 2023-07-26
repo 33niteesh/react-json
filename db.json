@@ -1,0 +1,64 @@
+{
+        "mobiles":[
+         {
+           "companyName" : "samsung",
+           "modelName" : "s8+",
+           "warranty" : "2 years",
+           "price" : 45000
+         }, 
+         {
+           "companyName" : "samsung",
+           "modelName" : "s8+",
+           "warranty" : "2 years",
+           "price" : 45000
+         },
+         {
+           "companyName" : "samsung",
+           "modelName" : "s8+",
+           "warranty" : "2 years",
+           "price" : 45000
+         }],
+       "books":[
+         {
+           "bookTag" : "java",
+           "bookName" : "the complete reference",
+           "authorName" : "herbert shildit",
+           "edition" : "2016",
+           "price" : 450
+         }, 
+         {
+           "bookTag" : "dataStructure",
+           "bookName" : "getting started with data structure",
+           "authorName" : "adam kooper",
+           "edition" : "2017",
+           "price" : 500
+         },
+         {
+           "bookTag" : "javascript",
+           "bookName" : "javascript :novice to ninja",
+           "authorName" : "herbert shildit",
+           "edition" : "2016",
+           "price" : 350
+         }
+        ],
+       "shoes":[
+         {
+           "companyName" : "nike",
+           "color" : "white",
+           "type" : "casual",
+           "price" : 4500
+         }, 
+         {
+           "companyName" : "adidas",
+           "color" : "brown",
+           "type" : "sports",
+           "price" : 4300
+         },
+         {
+           "companyName" : "sparks",
+           "color" : "blue",
+           "type" : "sports",
+           "price" : 3000
+         }
+        ]
+}
